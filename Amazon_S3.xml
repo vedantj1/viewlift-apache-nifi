@@ -1,0 +1,1202 @@
+<?xml version="1.0" ?>
+<template encoding-version="1.1">
+  <description></description>
+  <groupId>9cb8849e-015c-1000-f955-f821fc875c66</groupId>
+  <name>Amazon S3</name>
+  <snippet>
+    <processGroups>
+      <id>5f64624b-96e8-3e9d-0000-000000000000</id>
+      <parentGroupId>41ddef48-ee8c-3137-0000-000000000000</parentGroupId>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+      </position>
+      <comments></comments>
+      <contents>
+        <connections>
+          <id>d09a2722-79b6-380b-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>c31b7d8e-5a9e-3615-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>bd6ba93f-c520-3e57-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <connections>
+          <id>16f78463-f7de-3bee-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>64d2ecf3-4ded-3857-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>ee048331-777f-3d11-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <connections>
+          <id>253ef283-643e-3bdc-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>5ebe2fa3-2d62-35e8-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>c31b7d8e-5a9e-3615-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <connections>
+          <id>521d89a2-eef4-3f28-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>ee048331-777f-3d11-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>5f64624b-96e8-3e9d-0000-000000000000</groupId>
+            <id>5ebe2fa3-2d62-35e8-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <controllerServices>
+          <id>be81defa-c9e8-3177-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <bundle>
+            <artifact>nifi-dbcp-service-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <comments></comments>
+          <descriptors>
+            <entry>
+              <key>Database Connection URL</key>
+              <value>
+                <name>Database Connection URL</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Database Driver Class Name</key>
+              <value>
+                <name>Database Driver Class Name</name>
+              </value>
+            </entry>
+            <entry>
+              <key>database-driver-locations</key>
+              <value>
+                <name>database-driver-locations</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Database User</key>
+              <value>
+                <name>Database User</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Password</key>
+              <value>
+                <name>Password</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Max Wait Time</key>
+              <value>
+                <name>Max Wait Time</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Max Total Connections</key>
+              <value>
+                <name>Max Total Connections</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Validation-query</key>
+              <value>
+                <name>Validation-query</name>
+              </value>
+            </entry>
+          </descriptors>
+          <name>DBCPConnectionPool</name>
+          <persistsState>false</persistsState>
+          <properties>
+            <entry>
+              <key>Database Connection URL</key>
+              <value>jdbc:postgresql://viewlift-db2.ci7befxedtof.us-east-1.redshift.amazonaws.com:5439/dev?tcpKeepAlive=true</value>
+            </entry>
+            <entry>
+              <key>Database Driver Class Name</key>
+              <value>com.amazon.redshift.jdbc.Driver</value>
+            </entry>
+            <entry>
+              <key>database-driver-locations</key>
+              <value>/Users/VedantJaipuria/Downloads/RedshiftJDBC42-1.2.1.1001.jar</value>
+            </entry>
+            <entry>
+              <key>Database User</key>
+              <value>vl_dbreader</value>
+            </entry>
+            <entry>
+              <key>Password</key>
+            </entry>
+            <entry>
+              <key>Max Wait Time</key>
+              <value>5000 millis</value>
+            </entry>
+            <entry>
+              <key>Max Total Connections</key>
+              <value>10</value>
+            </entry>
+            <entry>
+              <key>Validation-query</key>
+            </entry>
+          </properties>
+          <state>ENABLED</state>
+          <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
+        </controllerServices>
+        <processors>
+          <id>bd6ba93f-c520-3e57-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>7.9999972118696405</x>
+            <y>280.99999093048586</y>
+          </position>
+          <bundle>
+            <artifact>nifi-standard-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>File Size</key>
+                <value>
+                  <name>File Size</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Batch Size</key>
+                <value>
+                  <name>Batch Size</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Data Format</key>
+                <value>
+                  <name>Data Format</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Unique FlowFiles</key>
+                <value>
+                  <name>Unique FlowFiles</name>
+                </value>
+              </entry>
+              <entry>
+                <key>generate-ff-custom-text</key>
+                <value>
+                  <name>generate-ff-custom-text</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>File Size</key>
+                <value>0B</value>
+              </entry>
+              <entry>
+                <key>Batch Size</key>
+                <value>1</value>
+              </entry>
+              <entry>
+                <key>Data Format</key>
+                <value>Text</value>
+              </entry>
+              <entry>
+                <key>Unique FlowFiles</key>
+                <value>false</value>
+              </entry>
+              <entry>
+                <key>generate-ff-custom-text</key>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>30 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>GenerateFlowFile</name>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+        </processors>
+        <processors>
+          <id>c31b7d8e-5a9e-3615-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>149.96584042681786</x>
+            <y>65.50439309113034</y>
+          </position>
+          <bundle>
+            <artifact>nifi-standard-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>
+                  <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                  <name>Database Connection Pooling Service</name>
+                </value>
+              </entry>
+              <entry>
+                <key>SQL select query</key>
+                <value>
+                  <name>SQL select query</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Max Wait Time</key>
+                <value>
+                  <name>Max Wait Time</name>
+                </value>
+              </entry>
+              <entry>
+                <key>dbf-normalize</key>
+                <value>
+                  <name>dbf-normalize</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>be81defa-c9e8-3177-0000-000000000000</value>
+              </entry>
+              <entry>
+                <key>SQL select query</key>
+                <value>select * from vl_user limit 100</value>
+              </entry>
+              <entry>
+                <key>Max Wait Time</key>
+                <value>0 seconds</value>
+              </entry>
+              <entry>
+                <key>dbf-normalize</key>
+                <value>false</value>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>ExecuteSQL</name>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>failure</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+        </processors>
+        <processors>
+          <id>ee048331-777f-3d11-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>906.3588789489381</x>
+            <y>51.49414877055165</y>
+          </position>
+          <bundle>
+            <artifact>nifi-update-attribute-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>Delete Attributes Expression</key>
+                <value>
+                  <name>Delete Attributes Expression</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Store State</key>
+                <value>
+                  <name>Store State</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Stateful Variables Initial Value</key>
+                <value>
+                  <name>Stateful Variables Initial Value</name>
+                </value>
+              </entry>
+              <entry>
+                <key>filename</key>
+                <value>
+                  <name>filename</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>Delete Attributes Expression</key>
+              </entry>
+              <entry>
+                <key>Store State</key>
+                <value>Do not store state</value>
+              </entry>
+              <entry>
+                <key>Stateful Variables Initial Value</key>
+              </entry>
+              <entry>
+                <key>filename</key>
+                <value>tess</value>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>UpdateAttribute</name>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+        <processors>
+          <id>4d0d2092-db98-3d0c-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>455.8447848095259</x>
+            <y>-139.9792723751782</y>
+          </position>
+          <bundle>
+            <artifact>nifi-standard-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>Hostname</key>
+                <value>
+                  <name>Hostname</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Port</key>
+                <value>
+                  <name>Port</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Username</key>
+                <value>
+                  <name>Username</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Password</key>
+                <value>
+                  <name>Password</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Private Key Path</key>
+                <value>
+                  <name>Private Key Path</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Private Key Passphrase</key>
+                <value>
+                  <name>Private Key Passphrase</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Remote Path</key>
+                <value>
+                  <name>Remote Path</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Create Directory</key>
+                <value>
+                  <name>Create Directory</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Batch Size</key>
+                <value>
+                  <name>Batch Size</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Connection Timeout</key>
+                <value>
+                  <name>Connection Timeout</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Data Timeout</key>
+                <value>
+                  <name>Data Timeout</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Conflict Resolution</key>
+                <value>
+                  <name>Conflict Resolution</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Reject Zero-Byte Files</key>
+                <value>
+                  <name>Reject Zero-Byte Files</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Dot Rename</key>
+                <value>
+                  <name>Dot Rename</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Temporary Filename</key>
+                <value>
+                  <name>Temporary Filename</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Host Key File</key>
+                <value>
+                  <name>Host Key File</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Last Modified Time</key>
+                <value>
+                  <name>Last Modified Time</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Permissions</key>
+                <value>
+                  <name>Permissions</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Remote Owner</key>
+                <value>
+                  <name>Remote Owner</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Remote Group</key>
+                <value>
+                  <name>Remote Group</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Strict Host Key Checking</key>
+                <value>
+                  <name>Strict Host Key Checking</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Send Keep Alive On Timeout</key>
+                <value>
+                  <name>Send Keep Alive On Timeout</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Use Compression</key>
+                <value>
+                  <name>Use Compression</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>Hostname</key>
+                <value>192.168.1.170</value>
+              </entry>
+              <entry>
+                <key>Port</key>
+                <value>22</value>
+              </entry>
+              <entry>
+                <key>Username</key>
+                <value>VedantJaipuria</value>
+              </entry>
+              <entry>
+                <key>Password</key>
+              </entry>
+              <entry>
+                <key>Private Key Path</key>
+              </entry>
+              <entry>
+                <key>Private Key Passphrase</key>
+              </entry>
+              <entry>
+                <key>Remote Path</key>
+                <value>/Users/VedantJaipuria/Documents/TESTNIFIFTP</value>
+              </entry>
+              <entry>
+                <key>Create Directory</key>
+                <value>false</value>
+              </entry>
+              <entry>
+                <key>Batch Size</key>
+                <value>500</value>
+              </entry>
+              <entry>
+                <key>Connection Timeout</key>
+                <value>30 sec</value>
+              </entry>
+              <entry>
+                <key>Data Timeout</key>
+                <value>30 sec</value>
+              </entry>
+              <entry>
+                <key>Conflict Resolution</key>
+                <value>NONE</value>
+              </entry>
+              <entry>
+                <key>Reject Zero-Byte Files</key>
+                <value>true</value>
+              </entry>
+              <entry>
+                <key>Dot Rename</key>
+                <value>true</value>
+              </entry>
+              <entry>
+                <key>Temporary Filename</key>
+              </entry>
+              <entry>
+                <key>Host Key File</key>
+              </entry>
+              <entry>
+                <key>Last Modified Time</key>
+              </entry>
+              <entry>
+                <key>Permissions</key>
+              </entry>
+              <entry>
+                <key>Remote Owner</key>
+              </entry>
+              <entry>
+                <key>Remote Group</key>
+              </entry>
+              <entry>
+                <key>Strict Host Key Checking</key>
+                <value>false</value>
+              </entry>
+              <entry>
+                <key>Send Keep Alive On Timeout</key>
+                <value>true</value>
+              </entry>
+              <entry>
+                <key>Use Compression</key>
+                <value>false</value>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>PutSFTP</name>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>failure</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>reject</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.standard.PutSFTP</type>
+        </processors>
+        <processors>
+          <id>5aca20cc-4d38-3f47-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>838.9658404268179</x>
+            <y>-161.99560690886966</y>
+          </position>
+          <bundle>
+            <artifact>nifi-standard-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>Directory</key>
+                <value>
+                  <name>Directory</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Conflict Resolution Strategy</key>
+                <value>
+                  <name>Conflict Resolution Strategy</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Create Missing Directories</key>
+                <value>
+                  <name>Create Missing Directories</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Maximum File Count</key>
+                <value>
+                  <name>Maximum File Count</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Last Modified Time</key>
+                <value>
+                  <name>Last Modified Time</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Permissions</key>
+                <value>
+                  <name>Permissions</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Owner</key>
+                <value>
+                  <name>Owner</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Group</key>
+                <value>
+                  <name>Group</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>Directory</key>
+                <value>data-in</value>
+              </entry>
+              <entry>
+                <key>Conflict Resolution Strategy</key>
+                <value>fail</value>
+              </entry>
+              <entry>
+                <key>Create Missing Directories</key>
+                <value>true</value>
+              </entry>
+              <entry>
+                <key>Maximum File Count</key>
+              </entry>
+              <entry>
+                <key>Last Modified Time</key>
+              </entry>
+              <entry>
+                <key>Permissions</key>
+              </entry>
+              <entry>
+                <key>Owner</key>
+              </entry>
+              <entry>
+                <key>Group</key>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>PutFile</name>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>failure</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.standard.PutFile</type>
+        </processors>
+        <processors>
+          <id>5ebe2fa3-2d62-35e8-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>530.6485466001698</x>
+            <y>57.447380424854146</y>
+          </position>
+          <bundle>
+            <artifact>nifi-avro-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>JSON container options</key>
+                <value>
+                  <name>JSON container options</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Wrap Single Record</key>
+                <value>
+                  <name>Wrap Single Record</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Avro schema</key>
+                <value>
+                  <name>Avro schema</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>JSON container options</key>
+                <value>array</value>
+              </entry>
+              <entry>
+                <key>Wrap Single Record</key>
+                <value>false</value>
+              </entry>
+              <entry>
+                <key>Avro schema</key>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>ConvertAvroToJSON</name>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>failure</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.avro.ConvertAvroToJSON</type>
+        </processors>
+        <processors>
+          <id>64d2ecf3-4ded-3857-0000-000000000000</id>
+          <parentGroupId>5f64624b-96e8-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>920.2035429586108</x>
+            <y>265.80329961751926</y>
+          </position>
+          <bundle>
+            <artifact>nifi-aws-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.2.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>Object Key</key>
+                <value>
+                  <name>Object Key</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Bucket</key>
+                <value>
+                  <name>Bucket</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Content Type</key>
+                <value>
+                  <name>Content Type</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Access Key</key>
+                <value>
+                  <name>Access Key</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Secret Key</key>
+                <value>
+                  <name>Secret Key</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Credentials File</key>
+                <value>
+                  <name>Credentials File</name>
+                </value>
+              </entry>
+              <entry>
+                <key>AWS Credentials Provider service</key>
+                <value>
+                  <identifiesControllerService>org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService</identifiesControllerService>
+                  <name>AWS Credentials Provider service</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Storage Class</key>
+                <value>
+                  <name>Storage Class</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Region</key>
+                <value>
+                  <name>Region</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Communications Timeout</key>
+                <value>
+                  <name>Communications Timeout</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Expiration Time Rule</key>
+                <value>
+                  <name>Expiration Time Rule</name>
+                </value>
+              </entry>
+              <entry>
+                <key>FullControl User List</key>
+                <value>
+                  <name>FullControl User List</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Read Permission User List</key>
+                <value>
+                  <name>Read Permission User List</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Write Permission User List</key>
+                <value>
+                  <name>Write Permission User List</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Read ACL User List</key>
+                <value>
+                  <name>Read ACL User List</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Write ACL User List</key>
+                <value>
+                  <name>Write ACL User List</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Owner</key>
+                <value>
+                  <name>Owner</name>
+                </value>
+              </entry>
+              <entry>
+                <key>canned-acl</key>
+                <value>
+                  <name>canned-acl</name>
+                </value>
+              </entry>
+              <entry>
+                <key>SSL Context Service</key>
+                <value>
+                  <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                  <name>SSL Context Service</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Endpoint Override URL</key>
+                <value>
+                  <name>Endpoint Override URL</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Signer Override</key>
+                <value>
+                  <name>Signer Override</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Multipart Threshold</key>
+                <value>
+                  <name>Multipart Threshold</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Multipart Part Size</key>
+                <value>
+                  <name>Multipart Part Size</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Multipart Upload AgeOff Interval</key>
+                <value>
+                  <name>Multipart Upload AgeOff Interval</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Multipart Upload Max Age Threshold</key>
+                <value>
+                  <name>Multipart Upload Max Age Threshold</name>
+                </value>
+              </entry>
+              <entry>
+                <key>server-side-encryption</key>
+                <value>
+                  <name>server-side-encryption</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Proxy Host</key>
+                <value>
+                  <name>Proxy Host</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Proxy Host Port</key>
+                <value>
+                  <name>Proxy Host Port</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>Object Key</key>
+                <value>${filename}</value>
+              </entry>
+              <entry>
+                <key>Bucket</key>
+                <value>testvedant/tests</value>
+              </entry>
+              <entry>
+                <key>Content Type</key>
+              </entry>
+              <entry>
+                <key>Access Key</key>
+              </entry>
+              <entry>
+                <key>Secret Key</key>
+              </entry>
+              <entry>
+                <key>Credentials File</key>
+              </entry>
+              <entry>
+                <key>AWS Credentials Provider service</key>
+              </entry>
+              <entry>
+                <key>Storage Class</key>
+                <value>Standard</value>
+              </entry>
+              <entry>
+                <key>Region</key>
+                <value>us-east-1</value>
+              </entry>
+              <entry>
+                <key>Communications Timeout</key>
+                <value>30 secs</value>
+              </entry>
+              <entry>
+                <key>Expiration Time Rule</key>
+              </entry>
+              <entry>
+                <key>FullControl User List</key>
+                <value>${s3.permissions.full.users}</value>
+              </entry>
+              <entry>
+                <key>Read Permission User List</key>
+                <value>${s3.permissions.read.users}</value>
+              </entry>
+              <entry>
+                <key>Write Permission User List</key>
+                <value>${s3.permissions.write.users}</value>
+              </entry>
+              <entry>
+                <key>Read ACL User List</key>
+                <value>${s3.permissions.readacl.users}</value>
+              </entry>
+              <entry>
+                <key>Write ACL User List</key>
+                <value>${s3.permissions.writeacl.users}</value>
+              </entry>
+              <entry>
+                <key>Owner</key>
+                <value>${s3.owner}</value>
+              </entry>
+              <entry>
+                <key>canned-acl</key>
+                <value>${s3.permissions.cannedacl}</value>
+              </entry>
+              <entry>
+                <key>SSL Context Service</key>
+              </entry>
+              <entry>
+                <key>Endpoint Override URL</key>
+              </entry>
+              <entry>
+                <key>Signer Override</key>
+                <value>Default Signature</value>
+              </entry>
+              <entry>
+                <key>Multipart Threshold</key>
+                <value>5 GB</value>
+              </entry>
+              <entry>
+                <key>Multipart Part Size</key>
+                <value>5 GB</value>
+              </entry>
+              <entry>
+                <key>Multipart Upload AgeOff Interval</key>
+                <value>60 min</value>
+              </entry>
+              <entry>
+                <key>Multipart Upload Max Age Threshold</key>
+                <value>7 days</value>
+              </entry>
+              <entry>
+                <key>server-side-encryption</key>
+                <value>None</value>
+              </entry>
+              <entry>
+                <key>Proxy Host</key>
+              </entry>
+              <entry>
+                <key>Proxy Host Port</key>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>PutS3Object</name>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>failure</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.aws.s3.PutS3Object</type>
+        </processors>
+      </contents>
+      <name>Amazon S3</name>
+    </processGroups>
+  </snippet>
+  <timestamp>07/17/2017 12:05:17 EDT</timestamp>
+</template>
